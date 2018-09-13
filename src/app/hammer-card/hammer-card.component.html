@@ -1,0 +1,13 @@
+
+
+<mat-card class="example-card" 
+          [@cardAnimator]="animationState"
+          (@cardAnimator.done)="resetAnimationState()"
+          (swipeup)="startAnimation('rotateOutUpRight')">
+
+    <mat-card-content>
+      <p>Learn how to build card with Angular ...</p>
+    </mat-card-content>
+    <button mat-raised-button (tap)="startAnimation('rotateOutUpRight')">Tap</button>
+
+</mat-card>
